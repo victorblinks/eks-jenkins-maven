@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name:  regapp
-        image:   951247596879.dkr.ecr.us-east-2.amazonaws.com/staging:3
+        image:   951247596879.dkr.ecr.us-east-2.amazonaws.com/staging:2
         ports:
         - containerPort: 8080
         env:
