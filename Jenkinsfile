@@ -19,7 +19,7 @@ pipeline {
         
         // Git Config
         GIT_REPO = 'https://github.com/victorblinks/eks-jenkins-maven.git'
-        BRANCH = 'demo'
+        BRANCH = 'vic'
     }
 
     stages {
