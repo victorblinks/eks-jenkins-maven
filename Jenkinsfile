@@ -8,17 +8,17 @@ pipeline {
 
     environment {
         // AWS & EKS Config
-        AWS_ACCOUNT_ID = '768477844960'  // Replace with your AWS Account ID
+        AWS_ACCOUNT_ID = '951247596879'  // Replace with your AWS Account ID
         AWS_REGION = 'us-east-2'
-        ECR_REPO = 'prod'
+        ECR_REPO = 'staging'
         DOCKER_IMAGE = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO}:${BUILD_NUMBER}"
         
         // EKS Config
-        EKS_CLUSTER_NAME = 'prod'
-        KUBE_NAMESPACE = 'eks-jenkins'
+        EKS_CLUSTER_NAME = 'staging'
+        KUBE_NAMESPACE = 'jenkins-project'
         
         // Git Config
-        GIT_REPO = 'https://github.com/Lion-Technology-Solutions/eks-jenkins-maven.git'
+        GIT_REPO = 'https://github.com/victorblinks/eks-jenkins-maven.git'
         BRANCH = 'demo'
     }
 
