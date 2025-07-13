@@ -21,9 +21,9 @@ spec:
     spec:
       containers:
       - name:  regapp
-        image:   768477844960.dkr.ecr.us-east-2.amazonaws.com/prod:3
+        image:   951247596879.dkr.ecr.us-east-2.amazonaws.com/staging:1
         ports:
         - containerPort: 8080
         env:
         - name: SPRING_PROFILES_ACTIVE
-          value: "prod"
+          value: "staging"
